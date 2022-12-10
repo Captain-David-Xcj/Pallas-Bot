@@ -22,7 +22,7 @@ if __name__ != "__main__":
 # https://wenxin.baidu.com/moduleApi/ernieVilg
 wenxin_ak = ''
 wenxin_sk = ''
-enable_探索无限_style = False
+enable_探索无限_style = True
 
 wenxin_api.ak = wenxin_ak
 wenxin_api.sk = wenxin_sk
