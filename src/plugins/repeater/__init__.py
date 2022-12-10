@@ -132,7 +132,7 @@ async def _(bot: Bot, event: GroupMessageEvent, state: T_State):
         event.self_id, raw_message, event.group_id))
 
     if Chat.ban(event.group_id, event.self_id, raw_message, str(event.user_id)):
-        await ban_msg.finish('下次不说这个了呜呜。')
+        await ban_msg.finish('这对角可能会不小心撞倒些家具，我会尽量小心。')
 
 
 speak_sched = require('nonebot_plugin_apscheduler').scheduler
@@ -156,7 +156,7 @@ async def _(bot: Bot, event: GroupMessageEvent, state: T_State):
             event.self_id, event.group_id))
 
     if Chat.ban(event.group_id, event.self_id, '', str(event.user_id)):
-        await ban_msg_latest.finish('下次不说这个了呜呜。')
+        await ban_msg_latest.finish('这对角可能会不小心撞倒些家具，我会尽量小心。')
 
 
 @ speak_sched.scheduled_job('interval', seconds=5)
