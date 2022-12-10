@@ -48,7 +48,7 @@ def gen_draw(text: str) -> Optional[List[str]]:
         'text': text,
         'style': rand_style,
         'resolution': '1024*1024',
-        "num": "1",
+        "num": 1,
     }
     try:
         response = TextToImage.create(**input_dict)
